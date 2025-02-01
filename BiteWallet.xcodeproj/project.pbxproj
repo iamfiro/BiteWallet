@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		475378532D4E5E0A001C1878 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 475378522D4E5E0A001C1878 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		476D6B0B2D4DDDD700077AB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		475378522D4E5E0A001C1878 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		476D6AFA2D4DDDD400077AB9 /* BiteWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiteWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		476D6B0A2D4DDDD700077AB9 /* BiteWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		476D6B142D4DDDD700077AB9 /* BiteWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +67,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		475378512D4E5E0A001C1878 /* asset */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = asset;
+			sourceTree = "<group>";
+		};
 		476D6AFC2D4DDDD400077AB9 /* BiteWallet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -112,6 +122,8 @@
 		476D6AF12D4DDDD400077AB9 = {
 			isa = PBXGroup;
 			children = (
+				475378512D4E5E0A001C1878 /* asset */,
+				475378522D4E5E0A001C1878 /* README.md */,
 				476D6AFC2D4DDDD400077AB9 /* BiteWallet */,
 				476D6B0D2D4DDDD700077AB9 /* BiteWalletTests */,
 				476D6B172D4DDDD700077AB9 /* BiteWalletUITests */,
@@ -145,6 +157,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				475378512D4E5E0A001C1878 /* asset */,
 				476D6AFC2D4DDDD400077AB9 /* BiteWallet */,
 			);
 			name = BiteWallet;
@@ -249,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475378532D4E5E0A001C1878 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
