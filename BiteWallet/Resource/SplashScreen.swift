@@ -11,41 +11,17 @@ import SwiftUI
 struct SplashScreen: View {
     var body: some View {
         VStack() {
-            VStack() {
-                Typo.Jumbo(
-                    text: "Smart Banking\nFor Your\nTransaction",
-                    fontType: .urbanist,
-                    alignment: .center
-                )
-                .padding(.bottom, 10)
-                Typo.Medium(text: "Pay bills with just a few taps")
-            }
             Spacer()
-            Image("Onboard/Security")
+            Image("logo/default")
                 .resizable()
-                .frame(maxWidth: .infinity)
                 .aspectRatio(contentMode: .fit)
+                .frame(width: 150)
             Spacer()
-            VStack(spacing: 10) {
-                GoogleLogin {
-                    print("asd")
-                }
-                AppleLogin {
-                    print("asd")
-                }
-            }
+            Typo.Regular(text: "문맹은 생활을 불편하게 하지만 금융문맹은 생존을 불가능하게 한다 \n\n- 앨런 그린스펀", color: Color("primary/dark"), fontType: .wantedSansMedium,alignment: .center)
+                .padding()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
-        .background(
-            LinearGradient(
-                gradient: Gradient(colors: [
-                    Color("Solid/White"), Color("Solid/White"), Color("Primary"), Color("Primary/Dark"), Color("Solid/Black")
-                ]),
-                startPoint: .top,
-                endPoint: .bottom
-            )
-        )
+        .background(Color("primary"))
     }
 }
 

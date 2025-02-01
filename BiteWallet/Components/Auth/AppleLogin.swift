@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct AppleLogin: View {
-    let onTapApple: () -> Void  // 외부에서 주입받을 로그인 로직
+    let onTapApple: () -> Void
     
     init(onTapApple: @escaping () -> Void) {
         self.onTapApple = onTapApple
     }
     
     var body: some View {
-        Button(action: onTapApple) {  // 주입받은 로직 사용
+        Button(action: onTapApple) {
             HStack(spacing: 12) {
                 Image("icon/brand/apple")
                     .resizable()
@@ -28,10 +28,12 @@ struct AppleLogin: View {
             .frame(maxWidth: .infinity)
             .background(Color.white)
             .cornerRadius(.infinity)
+            .foregroundColor(.black)
         }
-        .foregroundColor(.black)
+        .buttonStyle(ScaleButtonStyle())
     }
 }
+
 
 // 프리뷰용 예시
 #Preview {
