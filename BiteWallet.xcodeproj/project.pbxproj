@@ -29,9 +29,46 @@
 		476D6B142D4DDDD700077AB9 /* BiteWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiteWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4753768E2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Font/Urbanist-SemiBold.ttf",
+				"Font/WantedSans-Bold.ttf",
+				"Font/WantedSans-Medium.ttf",
+				"Font/WantedSans-Regular.ttf",
+				"Font/WantedSans-SemiBold.ttf",
+			);
+			target = 476D6B092D4DDDD700077AB9 /* BiteWalletTests */;
+		};
+		4753768F2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Font/Urbanist-SemiBold.ttf",
+				"Font/WantedSans-Bold.ttf",
+				"Font/WantedSans-Medium.ttf",
+				"Font/WantedSans-Regular.ttf",
+				"Font/WantedSans-SemiBold.ttf",
+			);
+			target = 476D6B132D4DDDD700077AB9 /* BiteWalletUITests */;
+		};
+		475376A32D4DF2C5001C1878 /* Exceptions for "BiteWallet" folder in "BiteWallet" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 476D6AF92D4DDDD400077AB9 /* BiteWallet */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		476D6AFC2D4DDDD400077AB9 /* BiteWallet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				475376A32D4DF2C5001C1878 /* Exceptions for "BiteWallet" folder in "BiteWallet" target */,
+				4753768E2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletTests" target */,
+				4753768F2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletUITests" target */,
+			);
 			path = BiteWallet;
 			sourceTree = "<group>";
 		};
@@ -399,6 +436,8 @@
 				DEVELOPMENT_TEAM = 8QBA7VUTZ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BiteWallet/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +467,8 @@
 				DEVELOPMENT_TEAM = 8QBA7VUTZ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BiteWallet/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

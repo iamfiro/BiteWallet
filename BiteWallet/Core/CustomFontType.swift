@@ -5,6 +5,7 @@ enum CustomFontType {
     case wantedSansMedium
     case wantedSansSemiBold
     case wantedSansBold
+    case urbanist
     case custom(String)
     
     var fontName: String {
@@ -17,6 +18,8 @@ enum CustomFontType {
             return "WantedSans-SemiBold"
         case .wantedSansBold:
             return "WantedSans-Bold"
+        case .urbanist:
+            return "Urbanist-Semibold"
         case .custom(let name):
             return name
         }

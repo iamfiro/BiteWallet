@@ -1,5 +1,5 @@
 //
-//  XLarge.swift
+//  Large.swift
 //  BiteWallet
 //
 //  Created by 조성주 on 2/1/25.
@@ -8,16 +8,16 @@
 import SwiftUI
 
 extension Typo {
-    struct XLarge: View {
+    struct Large: View {
         let text: String
         var color: Color = .primary
-        var fontType: CustomFontType = .wantedSansBold
+        var fontType: CustomFontType = .wantedSansMedium
         var lineSpacing: CGFloat?
         var alignment: TextAlignment?
         
         var body: some View {
             Text(text)
-                .font(CustomFontManager.shared.font(type: fontType, size: TypoSize.xLarge))
+                .font(CustomFontManager.shared.font(type: fontType, size: TypoSize.large))
                 .foregroundColor(color)
                 .if(lineSpacing != nil) { view in
                     view.lineSpacing(lineSpacing!)

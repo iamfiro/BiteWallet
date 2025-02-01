@@ -7,12 +7,23 @@
 
 import SwiftUI
 
-struct VailidateCustomFont: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+#if DEBUG
+extension CustomFontManager {
+    func validateFonts() {
+        let fontNames = [
+            "WantedSans-Regular",
+            "WantedSans-Medium",
+            "WantedSans-SemiBold",
+            "WantedSans-Bold"
+        ]
+        
+        fontNames.forEach { fontName in
+            if let bundleURL = Bundle.main.url(forResource: fontName, withExtension: "ttf") {
+                print("✅ Font file found: \(fontName)")
+            } else {
+                print("❌ Font file not found: \(fontName)")
+            }
+        }
     }
 }
-
-#Preview {
-    VailidateCustomFont()
-}
+#endif

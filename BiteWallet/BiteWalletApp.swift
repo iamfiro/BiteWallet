@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct BiteWalletApp: App {
+    init(){
+        CustomFontManager.shared.registerFonts()
+        #if DEBUG
+        CustomFontManager.shared.validateFonts()
+        #endif
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
