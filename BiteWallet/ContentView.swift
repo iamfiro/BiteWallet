@@ -20,10 +20,11 @@ struct ContentView: View {
                 Typo.Medium(text: "Pay bills with just a few taps", color: Color("gray/500"))
             }
             Spacer()
-            Image("Onboard/Security")
+            Image("onboard/security")
                 .resizable()
                 .frame(maxWidth: .infinity)
                 .aspectRatio(contentMode: .fit)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10))
             Spacer()
             VStack(spacing: 10) {
                 GoogleLogin {
@@ -35,11 +36,11 @@ struct ContentView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
+        .padding(EdgeInsets(top: 30, leading: 20, bottom: 0, trailing: 20))
         .background(
             LinearGradient(
                 gradient: Gradient(colors: [
-                    Color("Solid/White"), Color("Solid/White"), Color("Primary"), Color("Primary/Dark")
+                    Color("solid/white"), Color("solid/white"), Color("primary"), Color("primary/dark")
                 ]),
                 startPoint: .top,
                 endPoint: .bottom
