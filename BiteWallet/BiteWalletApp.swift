@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct BiteWalletApp: App {
+    @State var showSplashScreen: Bool = true
+    
+    @State private var authMacro = AuthMacro()
+    
     init(){
         CustomFontManager.shared.registerFonts()
         #if DEBUG
@@ -18,7 +22,19 @@ struct BiteWalletApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if showSplashScreen {
+                SplashScreen()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            withAnimation {
+                                showSplashScreen = false
+                            }
+                        }
+                    }
+            } else {
+                ContentView()
+                    .environmentObject(authMacro)
+            }
         }
     }
 }

@@ -1,15 +1,13 @@
 //
-//  ContentView.swift
+//  Onboard.swift
 //  BiteWallet
 //
-//  Created by 조성주 on 2/1/25.
+//  Created by 조성주 on 2/2/25.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    @Environment(AuthMacro.self) private var authMacro
-    
+struct Onboard: View {
     var body: some View {
         VStack() {
             VStack() {
@@ -52,5 +50,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    Onboard()
 }

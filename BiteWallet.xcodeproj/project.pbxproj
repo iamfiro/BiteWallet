@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		475378532D4E5E0A001C1878 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 475378522D4E5E0A001C1878 /* README.md */; };
+		4784D08F2D4E785800CC3EF7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4784D08E2D4E785800CC3EF7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,28 +36,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		4753768E2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Font/Urbanist-SemiBold.ttf",
-				"Font/WantedSans-Bold.ttf",
-				"Font/WantedSans-Medium.ttf",
-				"Font/WantedSans-Regular.ttf",
-				"Font/WantedSans-SemiBold.ttf",
-			);
-			target = 476D6B092D4DDDD700077AB9 /* BiteWalletTests */;
-		};
-		4753768F2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Font/Urbanist-SemiBold.ttf",
-				"Font/WantedSans-Bold.ttf",
-				"Font/WantedSans-Medium.ttf",
-				"Font/WantedSans-Regular.ttf",
-				"Font/WantedSans-SemiBold.ttf",
-			);
-			target = 476D6B132D4DDDD700077AB9 /* BiteWalletUITests */;
-		};
 		475376A32D4DF2C5001C1878 /* Exceptions for "BiteWallet" folder in "BiteWallet" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -76,8 +55,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				475376A32D4DF2C5001C1878 /* Exceptions for "BiteWallet" folder in "BiteWallet" target */,
-				4753768E2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletTests" target */,
-				4753768F2D4DF0BB001C1878 /* Exceptions for "BiteWallet" folder in "BiteWalletUITests" target */,
 			);
 			path = BiteWallet;
 			sourceTree = "<group>";
@@ -99,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4784D08F2D4E785800CC3EF7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +140,7 @@
 			);
 			name = BiteWallet;
 			packageProductDependencies = (
+				4784D08E2D4E785800CC3EF7 /* Alamofire */,
 			);
 			productName = BiteWallet;
 			productReference = 476D6AFA2D4DDDD400077AB9 /* BiteWallet.app */;
@@ -245,6 +224,9 @@
 			);
 			mainGroup = 476D6AF12D4DDDD400077AB9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4784D08D2D4E785800CC3EF7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 476D6AFB2D4DDDD400077AB9 /* Products */;
 			projectDirPath = "";
@@ -613,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4784D08D2D4E785800CC3EF7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4784D08E2D4E785800CC3EF7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4784D08D2D4E785800CC3EF7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 476D6AF22D4DDDD400077AB9 /* Project object */;
 }
