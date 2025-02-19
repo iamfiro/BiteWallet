@@ -11,8 +11,6 @@ import SwiftUI
 struct BiteWalletApp: App {
     @State var showSplashScreen: Bool = true
     
-    @State private var authMacro = AuthMacro()
-    
     init(){
         CustomFontManager.shared.registerFonts()
         #if DEBUG
@@ -31,10 +29,8 @@ struct BiteWalletApp: App {
                             }
                         }
                     }
-                    .environmentObject(authMacro)
             } else {
                 ContentView()
-                    .environmentObject(authMacro)
             }
         }
     }

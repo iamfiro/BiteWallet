@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var authMacro: AuthMacro
-    
     var body: some View {
         VStack() {
             VStack() {
