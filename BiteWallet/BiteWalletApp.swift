@@ -31,6 +31,7 @@ struct BiteWalletApp: App {
                             }
                         }
                     }
+                    .environmentObject(authMacro)
             } else {
                 ContentView()
                     .environmentObject(authMacro)
